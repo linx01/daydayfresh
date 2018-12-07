@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'df_user',
+    'df_goods',
+    'tinymce',
+
 ]
 
 MIDDLEWARE = [
@@ -104,7 +107,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+TINYMCE_DEFAULT_CONFIG = {
+    'theme':'advanced',
+    'width':600,
+    'height':400,
+}
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -126,3 +133,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'static')
+#MEDIA_ROOT = '/var/www/daydayfresh/static'

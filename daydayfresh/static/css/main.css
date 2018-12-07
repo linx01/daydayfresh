@@ -23,11 +23,11 @@ html,body{height:100%}
 
 .login_info em{color:#ff8800}
 
-.login_btn a,.user_link a{
+.login_info a,.login_btn a,.user_link a{
 	color:#666;
 }
 
-.login_btn a:hover,.user_link a:hover{
+.log_info a:hover,.login_btn a:hover,.user_link a:hover{
 	color:#ff8800;
 }
 
@@ -233,7 +233,8 @@ html,body{height:100%}
 	margin:0 auto 20px;
 }
 
-.goods_detail_pic{width:350px;height:350px;margin:24px 0 0 24px;}
+.goods_detail_pic{width:180px;height:180px;margin:100px 130px;}
+
 .goods_detail_list{
 	width:730px;height:350px;margin:24px 24px 0 0;
 }

@@ -1,6 +1,5 @@
 $(function(){
 
-
 	var error_name = false;
 	var error_password = false;
 	var error_check_password = false;
@@ -48,17 +47,18 @@ $(function(){
 			error_name = true;
 		}
 		else
-		{   $.get('/user/register_exist/?username='+$('#user_name').val(),function(dict){
-            if(dict.count == 0){
-			    $('#user_name').next().hide();
-			    error_name = false;
-            }
-            else{
-                $('#user_name').next().html('用户名已存在!');
-                $('#user_name').next().show();
-                error_name = true;
-            }
-		})
+		{
+		    $.get('/user/register_exist/?username='+$('#user_name').val(),function(dict){
+		        if(dict.count == 0){
+                    $('#user_name').next().hide();
+                    error_name = false;
+		        }
+		        else{
+                    $('#user_name').next().html('用户名已存在!').show();
+                    $('#user_name').next().show();
+                    error_name = true;
+		        }
+		    })
 
 		}
 	}
@@ -67,15 +67,15 @@ $(function(){
 		var len = $('#pwd').val().length;
 		if(len<8||len>20)
 		{
-			$('#pwd').next().html('密码最少8位，最长20位');
+			$('#pwd').next().html('密码最少8位，最长20位')
 			$('#pwd').next().show();
 			error_password = true;
 		}
 		else
 		{
-		    $('#pwd').next().hide();
-		    error_password = false;
-		}
+			$('#pwd').next().hide();
+			error_password = false;
+		}		
 	}
 
 
@@ -115,7 +115,7 @@ $(function(){
 	}
 
 
-	$('#reg_form').submit(function() {
+	$('.reg_form').submit(function() {
 		check_user_name();
 		check_pwd();
 		check_cpwd();
