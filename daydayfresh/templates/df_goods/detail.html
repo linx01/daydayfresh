@@ -1,19 +1,31 @@
 {% extends 'df_goods/base.html' %}
+
+
 {% block body %}
 
-
+	<div class="search_bar clearfix">
+		<a href="/" class="logo fl"><img src="/static/images/logo.png"></a>
+		<div class="search_con fl">
+			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
+			<input type="button" class="input_btn fr" name="" value="搜索">
+		</div>
+		<div class="guest_cart fr">
+			<a href="#" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl">1</div>
+		</div>
+	</div>
 	<div class="navbar_con">
 		<div class="navbar clearfix">
 			<div class="subnav_con fl">
 				<h1>全部商品分类</h1>	
 				<span></span>			
 				<ul class="subnav">
-					<li><a href="/goods/list/1/" class="fruit">新鲜水果</a></li>
-					<li><a href="/goods/list/2/" class="seafood">海鲜水产</a></li>
-					<li><a href="/goods/list/3/" class="meet">猪牛羊肉</a></li>
-					<li><a href="/goods/list/4/" class="egg">禽类蛋品</a></li>
-					<li><a href="/goods/list/5/" class="vegetables">新鲜蔬菜</a></li>
-					<li><a href="/goods/list/6/" class="ice">速冻食品</a></li>
+					<li><a href="/goods/list/1/-id/" class="fruit">新鲜水果</a></li>
+					<li><a href="/goods/list/2/-id/" class="seafood">海鲜水产</a></li>
+					<li><a href="/goods/list/3/-id/" class="meet">猪牛羊肉</a></li>
+					<li><a href="/goods/list/4/-id/" class="egg">禽类蛋品</a></li>
+					<li><a href="/goods/list/5/-id/" class="vegetables">新鲜蔬菜</a></li>
+					<li><a href="/goods/list/6/-id/" class="ice">速冻食品</a></li>
 				</ul>
 			</div>
 			<ul class="navlist fl">
@@ -29,7 +41,7 @@
 	<div class="breadcrumb">
 		<a href="/">全部分类</a>
 		<span>></span>
-		<a href="/goods/list/{{type.id}}/">{{type.ttitle}}</a>
+		<a href="/goods/list/{{type.id}}/-id/">{{type.ttitle}}</a>
 		<span>></span>
 		<a href="#">{{good.gtitle}}</a>
 	</div>
@@ -91,8 +103,9 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="/static/js/jquery-1.12.2.js"></script>
-	<script type="text/javascript">
+<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+	$(function(){
 		var $add_x = $('#add_cart').offset().top;
 		var $add_y = $('#add_cart').offset().left;
 
@@ -108,9 +121,9 @@
 					$(".add_jump").fadeOut('fast',function(){
 						$('#show_count').html(2);
 					});
-
 			});
 		})
-	</script>
+	})
+</script>
 
 {% endblock body %}

@@ -5,7 +5,17 @@
 	<script type="text/javascript" src="/static/js/slide.js"></script>
 {% endblock head %}
 {% block body %}
-
+	<div class="search_bar clearfix">
+		<a href="/" class="logo fl"><img src="/static/images/logo.png"></a>
+		<div class="search_con fl">
+			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
+			<input type="button" class="input_btn fr" name="" value="搜索">
+		</div>
+		<div class="guest_cart fr">
+			<a href="#" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl">1</div>
+		</div>
+	</div>
 
 	<div class="navbar_con">
 		<div class="navbar">
@@ -22,12 +32,12 @@
 
 	<div class="center_con clearfix">
 		<ul class="subnav fl">
-			<li><a href="/goods/list/1/" class="fruit">新鲜水果</a></li>
-			<li><a href="/goods/list/2/" class="seafood">海鲜水产</a></li>
-			<li><a href="/goods/list/3/" class="meet">猪牛羊肉</a></li>
-			<li><a href="/goods/list/4/" class="egg">禽类蛋品</a></li>
-			<li><a href="/goods/list/5/" class="vegetables">新鲜蔬菜</a></li>
-			<li><a href="/goods/list/6/" class="ice">速冻食品</a></li>
+			<li><a href="/goods/list/1/-id/" class="fruit">新鲜水果</a></li>
+			<li><a href="/goods/list/2/-id/" class="seafood">海鲜水产</a></li>
+			<li><a href="/goods/list/3/-id/" class="meet">猪牛羊肉</a></li>
+			<li><a href="/goods/list/4/-id/" class="egg">禽类蛋品</a></li>
+			<li><a href="/goods/list/5/-id/" class="vegetables">新鲜蔬菜</a></li>
+			<li><a href="/goods/list/6/-id/" class="ice">速冻食品</a></li>
 		</ul>
 		<div class="slide fl">
 			<ul class="slide_pics">
@@ -55,7 +65,7 @@
 				<a href="/goods/detail/1/{{good.id}}/">{{good.gtitle}}</a>
 				{% endfor %}
 			</div>
-			<a href="/goods/list/1/" class="goods_more fr" id="fruit_more">查看更多 ></a>
+			<a href="/goods/list/1/-id/" class="goods_more fr" id="fruit_more">查看更多 ></a>
 		</div>
 
 		<div class="goods_con clearfix">
@@ -82,7 +92,7 @@
 				<a href="/goods/detail/2/{{good.id}}/">{{good.gtitle}}</a>
 				{% endfor %}
 			</div>
-			<a href="/goods/list/2/" class="goods_more fr">查看更多 ></a>
+			<a href="/goods/list/2/-id/" class="goods_more fr">查看更多 ></a>
 		</div>
 
 		<div class="goods_con clearfix">
@@ -108,7 +118,7 @@
 				<a href="/goods/detail/3/{{good.id}}/">{{good.gtitle}}</a>
 				{% endfor %}
 			</div>
-			<a href="/goods/list/3/" class="goods_more fr">查看更多 ></a>
+			<a href="/goods/list/3/-id/" class="goods_more fr">查看更多 ></a>
 		</div>
 
 		<div class="goods_con clearfix">
@@ -134,7 +144,7 @@
 				<a href="/goods/detail/4/{{good.id}}/">{{good.gtitle}}</a>
 				{% endfor %}
 			</div>
-			<a href="/goods/list/4/" class="goods_more fr">查看更多 ></a>
+			<a href="/goods/list/4/-id/" class="goods_more fr">查看更多 ></a>
 		</div>
 
 		<div class="goods_con clearfix">
@@ -160,7 +170,7 @@
 				<a href="/goods/detail/5/{{good.id}}/">{{good.gtitle}}</a>
 				{% endfor %}
 			</div>
-			<a href="/goods/list/5/" class="goods_more fr">查看更多 ></a>
+			<a href="/goods/list/5/-id/" class="goods_more fr">查看更多 ></a>
 		</div>
 
 		<div class="goods_con clearfix">
@@ -186,7 +196,7 @@
 				<a href="/goods/detail/6/{{good.id}}/">{{good.gtitle}}</a>
 				{% endfor %}
 			</div>
-			<a href="/goods/list/6/" class="goods_more fr">查看更多 ></a>
+			<a href="/goods/list/6/-id/" class="goods_more fr">查看更多 ></a>
 		</div>
 
 		<div class="goods_con clearfix">

@@ -1,10 +1,13 @@
 from django.shortcuts import render,redirect
 from .models import GoodsInfo,TypeInfo
+from django.http import HttpResponse,JsonResponse
 
 def detail(request,pid,id):
     type = TypeInfo.objects.get(pk = pid)
     goods_new = GoodsInfo.objects.filter(gtype_id = pid).order_by('-id')[0:2]
     good = GoodsInfo.objects.get(pk = id)
+    good.gclick += 1 #累计点击量
+    good.save()
     context = {'goods_new':goods_new,'type':type,'good':good}
     return render(request,'df_goods/detail.html',context)
 
@@ -37,12 +40,12 @@ def index(request):
                'goods5_new':goods5_new,'goods5_click':goods5_click,'goods6_new':goods6_new,'goods6_click':goods6_click,}
     return render(request,'df_goods/index.html',context)
 
-def list(request,id):
+def list(request,id,method):
     type = TypeInfo.objects.get(pk = id)
-    goods = GoodsInfo.objects.filter(gtype_id = id).order_by('-id')
-    goods_new = goods[0:2]
-    print(goods)
-    context = {'goods':goods,'goods_new':goods_new,'type':type}
+    goods_new = GoodsInfo.objects.filter(gtype_id = id).order_by('-id')[0:2]
+    goods = GoodsInfo.objects.filter(gtype_id = id).order_by(method)
+    context = {'goods':goods,'goods_new':goods_new,'type':type,'method':method}
     return render(request,'df_goods/list.html',context)
+
 
 # Create your views here.
