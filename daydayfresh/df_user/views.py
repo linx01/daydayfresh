@@ -1,7 +1,19 @@
 from django.http import JsonResponse,HttpResponseRedirect
 from django.shortcuts import render,redirect
-from .models import UserInfo
+from df_user.models import UserInfo
+from df_goods.models import GoodsInfo
 from hashlib import sha1
+
+def decoration_login(func):
+    def login_in(request,*args,**kwargs):
+        if request.session.get('uname','') != '':
+            return func(request,*args,**kwargs)
+        else:
+            ret = HttpResponseRedirect('/user/login/')
+            ret.set_cookie('url',request.get_full_path())
+            return ret
+    return login_in
+
 
 def register(request):
     #print('register')
@@ -58,8 +70,10 @@ def login_handle(request):
         if users[0].upwd == pwd_s1:#用户名存在，密码正确
             request.session['uname'] = username
             request.session['uemail'] = users[0].uemail
+            request.session['uid'] = users[0].id
             rememberusername = request.POST.get('rememberusername','')
-            red = HttpResponseRedirect('/user/user_center_info/')
+            url = request.COOKIES.get('url','/')
+            red = HttpResponseRedirect(url)
             if rememberusername == 'on':
                 red.set_cookie('uname',username)
             else:
@@ -70,40 +84,38 @@ def login_handle(request):
             return render(request,'df_user/login.html',context)
 
 def logout(request):
-    del request.session['uname']
-    del request.session['uemail']
-    context = {'title': '用户中心','uname':'unlogin!','uemail':'unlogin!','loginstatus':0}
-    return render(request,'df_user/user_center_info.html',context)
+    request.session.flush()
+    red = HttpResponseRedirect('/')
+    red.set_cookie('url','/')
+    return red
 
 
 
+@decoration_login
 def user_center_info(request):
-    username = request.session.get('uname','unlogin!')
-    uemail = request.session.get('uemail','unlogin!')
-    if username == 'unlogin!':
-        context = {'title': '用户中心','uname':username,'uemail':uemail,'loginstatus':0}
-        return render(request,'df_user/user_center_info.html',context)
+    goods_id = request.COOKIES.get('goods_id','')
+    if goods_id != '':
+        goods_id = goods_id.split(',')
+        goods = []
+        for good_id in goods_id:
+            good = GoodsInfo.objects.get(pk = good_id)
+            goods.append(good)
     else:
-        context = {'title': '用户中心','uname':username,'uemail':uemail,'loginstatus':1}
-        return render(request, 'df_user/user_center_info.html', context)
-
+        goods = goods_id
+    context = {'title': '用户中心','request':request,'goods':goods}
+    return render(request, 'df_user/user_center_info.html', context)
+@decoration_login
 def user_center_order(request):
-    username = request.session.get('uname','unlogin!')
-    if username == 'unlogin!':
-        context = {'title': '用户中心','uname':username,'loginstatus':0}
-        return render(request,'df_user/user_center_order.html',context)
-    else:
-        context = {'title': '用户中心','uname':username,'loginstatus':1}
-        return render(request, 'df_user/user_center_order.html', context)
-
+    context = {'title': '用户中心','request':request}
+    return render(request, 'df_user/user_center_order.html', context)
+@decoration_login
 def user_center_site(request):
-    username = request.session.get('uname','unlogin!')
-    if username == 'unlogin!':
-        context = {'title': '用户中心','uname':username,'loginstatus':0}
-        return render(request,'df_user/user_center_site.html',context)
-    else:
-        context = {'title': '用户中心','uname':username,'loginstatus':1}
-        return render(request, 'df_user/user_center_site.html', context)
+    name = request.GET.get('name','')
+    address = request.GET.get('address','')
+    mailcode = request.GET.get('mailcode','')
+    cellphone = request.GET.get('cellphone','')
+    context = {'title': '用户中心','request':request,'name':name,'address':address,'cellphone':cellphone,'mailcode':mailcode}
+    return render(request, 'df_user/user_center_site.html', context)
 
 
 

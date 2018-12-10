@@ -1,19 +1,62 @@
 {% extends 'df_goods/base.html' %}
 
+{% block head %}
+<script type="text/javascript">
+    function add(){
+        num=parseFloat($('.num_show').val());
+        $('.num_show').val(num+1);
+        $('.num_show').blur();
+    }
+    function minus(){
+        num=parseFloat($('.num_show').val());
+        $('.num_show').val(num-1);
+        $('.num_show').blur();    	
+    }
+    function calculate(){
+ 		num=parseFloat($('.num_show').val());
+    	price=parseFloat($('#show_prize').text());
+    	total = num * price;
+    	$('#total').text(total.toFixed(2)+'元')   	
+    }
+    $(function(){
+    	calculate();
+    	$('.num_show').blur(function(){
+    		calculate()
+    	});
+    	$('#add_cart').click(function(){
+    		//判断是否登录
+    		if($('.login_btn').text().indexOf('注册') >=0 ){
+    			location.href = '/user/login/';
+    			return;
+    		}
+    		//动画
+    		var $add_x = $('#add_cart').offset().top;
+			var $add_y = $('#add_cart').offset().left;
 
+			var $to_x = $('#show_count').offset().top;
+			var $to_y = $('#show_count').offset().left;
+
+			$(".add_jump").css({'left':$add_y+80,'top':$add_x+10,'display':'block'})
+			$(".add_jump").stop().animate({
+				'left': $to_y+7,
+				'top': $to_x+7},
+				'slow', function() {
+					$(".add_jump").fadeOut('slow',function(){
+					});
+				});
+			//计数
+    		count = $('.num_show').val();
+    		good_id = $('.goods_detail_list').attr('id');
+    		$.get('/cart/'+good_id+'/'+count+'/',function(dict){
+    			$('.guest_cart .goods_count').text(dict.count)
+    		});
+
+    	})
+    })
+</script>
+{% endblock head %}
 {% block body %}
 
-	<div class="search_bar clearfix">
-		<a href="/" class="logo fl"><img src="/static/images/logo.png"></a>
-		<div class="search_con fl">
-			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
-			<input type="button" class="input_btn fr" name="" value="搜索">
-		</div>
-		<div class="guest_cart fr">
-			<a href="#" class="cart_name fl">我的购物车</a>
-			<div class="goods_count fl">1</div>
-		</div>
-	</div>
 	<div class="navbar_con">
 		<div class="navbar clearfix">
 			<div class="subnav_con fl">
@@ -33,7 +76,7 @@
 				<li class="interval">|</li>
 				<li><a href="">手机生鲜</a></li>
 				<li class="interval">|</li>
-				<li><a href="">抽奖</a></li>
+				<li><a href="javascript:void(0)" onclick="show()">抽奖</a></li>
 			</ul>
 		</div>
 	</div>
@@ -49,22 +92,22 @@
 	<div class="goods_detail_con clearfix">
 		<div class="goods_detail_pic fl"><img src="/static/{{good.gpic}}"></div>
 
-		<div class="goods_detail_list fr">
+		<div class="goods_detail_list fr" id="{{good.id}}">
 			<h3>{{good.gtitle}}</h3>
 			<p>{{good.gjianjie}}</p>
 			<div class="prize_bar">
-				<span class="show_pirze">¥<em>{{good.gprice}}</em></span>
+				<span class="show_pirze" >¥<em id="show_prize">{{good.gprice}}</em></span>
 				<span class="show_unit">单  位：{{good.gunit}}</span>
 			</div>
 			<div class="goods_num clearfix">
 				<div class="num_name fl">数 量：</div>
 				<div class="num_add fl">
 					<input type="text" class="num_show fl" value="1">
-					<a href="javascript:;" class="add fr">+</a>
-					<a href="javascript:;" class="minus fr">-</a>	
+					<a href="javascript:void(0);" onclick="add()" class="add fr">+</a>
+					<a href="javascript:void(0);" onclick="minus()" class="minus fr">-</a>	
 				</div> 
 			</div>
-			<div class="total">总价：<em></em></div>
+			<div class="total" >总价：<em id="total"></em></div>
 			<div class="operate_btn">
 				<a href="javascript:;" class="buy_btn">立即购买</a>
 				<a href="javascript:;" class="add_cart" id="add_cart">加入购物车</a>				
@@ -103,27 +146,6 @@
 		</div>
 	</div>
 
-<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-	$(function(){
-		var $add_x = $('#add_cart').offset().top;
-		var $add_y = $('#add_cart').offset().left;
 
-		var $to_x = $('#show_count').offset().top;
-		var $to_y = $('#show_count').offset().left;
-
-		$(".add_jump").css({'left':$add_y+80,'top':$add_x+10,'display':'block'})
-		$('#add_cart').click(function(){
-			$(".add_jump").stop().animate({
-				'left': $to_y+7,
-				'top': $to_x+7},
-				"fast", function() {
-					$(".add_jump").fadeOut('fast',function(){
-						$('#show_count').html(2);
-					});
-			});
-		})
-	})
-</script>
 
 {% endblock body %}

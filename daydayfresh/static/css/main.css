@@ -13,21 +13,20 @@ html,body{height:100%}
 	margin:0 auto;
 }
 
-.welcome,.login_info,.login_btn,.user_link{
+.welcome,.login_btn,.user_link{
 	line-height:29px;
 }
 
-.login_info{
-	display:none;
-}
 
-.login_info em{color:#ff8800}
 
-.login_info a,.login_btn a,.user_link a{
+
+.login_btn a em{color:#ff8800}
+
+.login_btn a,.user_link a{
 	color:#666;
 }
 
-.log_info a:hover,.login_btn a:hover,.user_link a:hover{
+.login_btn a:hover,.user_link a:hover{
 	color:#ff8800;
 }
 
