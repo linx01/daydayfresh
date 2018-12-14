@@ -21,7 +21,20 @@
     $(function(){
     	calculate();
     	$('.num_show').blur(function(){
-    		calculate()
+    		var count = $(this).val();
+			var kucun = parseFloat($('.goods_detail_list .kucun em').text())
+
+
+			if(count <= 0){
+				alert('商品购买数量至少为1！');
+				$(this).val(1);
+				$(this).focus();
+			}else if(count > kucun){
+				alert('商品库存不足!')
+				$(this).val(kucun);
+				$(this).focus();
+			}
+			calculate();
     	});
     	$('#add_cart').click(function(){
     		//判断是否登录
@@ -107,6 +120,7 @@
 					<a href="javascript:void(0);" onclick="minus()" class="minus fr">-</a>	
 				</div> 
 			</div>
+			<div class="kucun" >库存：<em id="kucun">{{good.gkucun}}</em></div>
 			<div class="total" >总价：<em id="total"></em></div>
 			<div class="operate_btn">
 				<a href="javascript:;" class="buy_btn">立即购买</a>

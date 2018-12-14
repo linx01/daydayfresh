@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'v1l)pff#9vz7ys-_*cd@g5ccyiwg^8^29el3r74v&oh!juh!(8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'tinymce',
     'df_cart',
     'df_order',
+    'haystack',
 
 ]
 
@@ -136,5 +137,16 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
 
-MEDIA_ROOT = os.path.join(BASE_DIR,'static')
-#MEDIA_ROOT = '/var/www/daydayfresh/static'
+#MEDIA_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = '/var/www/daydayfresh/static'
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.whoosh_cn_backend.WhooshEngine',
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    }
+}
+#自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+#设置每个分页内容的数量
+HAYSTACK_SEARCH_RESULTS_PER_PAGE  =  12

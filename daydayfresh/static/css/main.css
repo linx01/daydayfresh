@@ -251,8 +251,9 @@ html,body{height:100%}
 .goods_num .num_add .add,.goods_num .num_add .minus{width:25px;line-height:25px;text-align:center;border-left:1px solid #ddd;border-bottom:1px solid #ddd;color:#666;font-size:14px}
 .goods_num .num_add .minus{border-bottom:0px}
 
-.total{height:35px;line-height:35px;margin-top:25px;}
+.total,.kucun{height:35px;line-height:35px;margin-top:25px;}
 .total em{font-style:normal;color:#ff3e3e;font-size:18px}
+.kucun em{font-style:normal;color:#ff3e3e;font-size:18px}
 
 .operate_btn{height:40px;margin-top:35px;font-size:0;position:relative;}
 .operate_btn .buy_btn,.operate_btn .add_cart{display:inline-block;width:178px;height:38px;border:1px solid #c40000;font-size:14px;color:#c40000;line-height:38px;text-align:center;background-color:#ffeded;}
@@ -348,12 +349,13 @@ html,body{height:100%}
 
 .cart_list_th{width:1198px;border:1px solid #ddd;background-color:#f7f7f7;margin:0 auto;}
 .cart_list_th li{height:40px;line-height:40px;float:left;text-align:center;}
-.cart_list_th .col01{width:26%;}
+.cart_list_th .col01{width:27%;}
+.cart_list_th .col0101{width:9%;}
 .cart_list_th .col02{width:16%;}
 .cart_list_th .col03{width:13%;}
 .cart_list_th .col04{width:12%;}
 .cart_list_th .col05{width:15%;}
-.cart_list_th .col06{width:18%;}
+.cart_list_th .col06{width:8%;}
 
 .cart_list_td{width:1198px;border:1px solid #ddd;background-color:#edfff9;margin:0 auto;margin-top:-1px;}
 .cart_list_td li{height:120px;line-height:120px;float:left;text-align:center;}
@@ -361,11 +363,12 @@ html,body{height:100%}
 .cart_list_td .col01{width:4%;}
 .cart_list_td .col02{width:12%;}
 .cart_list_td .col03{width:10%;}
+.cart_list_td .col0101{width:10%;}
 .cart_list_td .col04{width:16%;}
 .cart_list_td .col05{width:13%;}
 .cart_list_td .col06{width:12%;}
 .cart_list_td .col07{width:15%;}
-.cart_list_td .col08{width:18%;}
+.cart_list_td .col08{width:8%;}
 
 .cart_list_td .col02 img{width:100px;height:100px;border:1px solid #ddd;display:block;margin:10px auto 0;}
 .cart_list_td .col03{height:48px;text-align:left;line-height:24px;margin-top:38px;}
@@ -473,7 +476,7 @@ html,body{height:100%}
 .order_goods_list .col04{width:20%}
 
 .oper_btn{display:inline-block;border:1px solid #ddd;color:#666;padding:5px 10px}
-
+.oper_pay{display:inline-block;border:1px solid #ddd;color:#666;padding:5px 10px}
 .popup_con{display:none;}
 .popup{width:300px;height:150px;border:1px solid #dddddd;border-top:2px solid #00bc6f;background-color:#f7f7f7;position:fixed;
 	left:50%;

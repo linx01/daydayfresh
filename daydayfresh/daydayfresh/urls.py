@@ -25,5 +25,6 @@ urlpatterns = [
     re_path(r'^goods/',include('df_goods.urls')),
     re_path(r'^cart/', include('df_cart.urls')),
     re_path(r'^order/',include('df_order.urls')),
+    re_path(r'^search/', include('haystack.urls')),
 
 ]

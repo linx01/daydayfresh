@@ -1,0 +1,826 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 15:31:12 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x555f77ced4e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x555f77ced4e0 pid: 4233 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4233)
+spawned uWSGI worker 1 (pid: 4235, cores: 2)
+spawned uWSGI worker 2 (pid: 4236, cores: 2)
+spawned uWSGI worker 3 (pid: 4239, cores: 2)
+spawned uWSGI worker 4 (pid: 4240, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 15:37:19 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55cb90c684e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55cb90c684e0 pid: 4300 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4300)
+spawned uWSGI worker 1 (pid: 4302, cores: 2)
+spawned uWSGI worker 2 (pid: 4303, cores: 2)
+spawned uWSGI worker 3 (pid: 4305, cores: 2)
+spawned uWSGI worker 4 (pid: 4307, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 15:54:25 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.2.106:8000（直接做web服务器，使用http） fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:44717 (port auto-assigned) fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55a9db0905c0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a9db0905c0 pid: 2209 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2209)
+spawned uWSGI worker 1 (pid: 2211, cores: 2)
+spawned uWSGI worker 2 (pid: 2212, cores: 2)
+spawned uWSGI worker 3 (pid: 2213, cores: 2)
+spawned uWSGI worker 4 (pid: 2215, cores: 2)
+spawned uWSGI http 1 (pid: 2217)
+[pid: 2211|app: 0|req: 1/1] 192.168.2.106 () {36 vars in 651 bytes} [Fri Dec 14 15:55:18 2018] GET / => generated 12579 bytes in 324 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 3/2] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 15:55:18 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 3/3] 192.168.2.106 () {36 vars in 629 bytes} [Fri Dec 14 15:55:18 2018] GET /static/css/main.css => generated 93 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 2/4] 192.168.2.106 () {36 vars in 656 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/logo.png => generated 96 bytes in 136 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 2/5] 192.168.2.106 () {36 vars in 636 bytes} [Fri Dec 14 15:55:18 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 137 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 2/6] 192.168.2.106 () {36 vars in 631 bytes} [Fri Dec 14 15:55:18 2018] GET /static/css/reset.css => generated 94 bytes in 149 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 2/7] 192.168.2.106 () {36 vars in 612 bytes} [Fri Dec 14 15:55:18 2018] GET /static/js/slide.js => generated 92 bytes in 142 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 4/8] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 15:55:18 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 3/9] 192.168.2.106 () {36 vars in 612 bytes} [Fri Dec 14 15:55:18 2018] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 5/10] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/slide03.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 3/11] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/adv02.jpg => generated 97 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 6/12] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/slide04.jpg => generated 99 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 7/13] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/banner01.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 4/14] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/adv01.jpg => generated 97 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 9/15] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods039.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 2/16] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/slide02.jpg => generated 99 bytes in 33 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 9/17] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods038.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 4/18] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods037.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 2/19] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/slide.jpg => generated 97 bytes in 173 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 5/20] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods008.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 11/21] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods036.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 11/22] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/banner02.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 3/23] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods005.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 5/24] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods007.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 6/25] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods006.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 6/26] 192.168.2.106 () {36 vars in 663 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/banner03.jpg => generated 100 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 13/27] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods012.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 13/28] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods011.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 4/29] 192.168.2.106 () {36 vars in 663 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/banner04.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 8/30] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods009.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 8/31] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods010.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 7/32] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods014.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 5/33] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods016.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 15/34] 192.168.2.106 () {36 vars in 663 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/banner05.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 15/35] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods013.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 6/36] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods015.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 8/37] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods020.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 16/38] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods019.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 7/39] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods017.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 9/40] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:18 2018] GET /static/images/banner06.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 17/41] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods018.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 8/42] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods022.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 18/43] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods024.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 9/44] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods023.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 10/45] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:18 2018] GET /static/df_goods/goods021.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 9/46] 192.168.2.106 () {36 vars in 634 bytes} [Fri Dec 14 15:55:19 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 10/47] 192.168.2.106 () {38 vars in 682 bytes} [Fri Dec 14 15:55:42 2018] GET / => generated 12579 bytes in 57 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 11/48] 192.168.2.106 () {36 vars in 631 bytes} [Fri Dec 14 15:55:42 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 19/49] 192.168.2.106 () {36 vars in 629 bytes} [Fri Dec 14 15:55:42 2018] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 20/50] 192.168.2.106 () {36 vars in 636 bytes} [Fri Dec 14 15:55:42 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 10/51] 192.168.2.106 () {36 vars in 656 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/logo.png => generated 96 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 12/52] 192.168.2.106 () {36 vars in 612 bytes} [Fri Dec 14 15:55:42 2018] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 12/53] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 15:55:42 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 12/54] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/slide.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 12/55] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/slide02.jpg => generated 99 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 22/56] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/adv01.jpg => generated 97 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 12/56] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/slide03.jpg => generated 99 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 22/57] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/slide04.jpg => generated 99 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 14/58] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/adv02.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 14/59] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods038.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 23/60] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods039.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 24/61] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/banner01.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 13/62] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods007.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 14/63] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods036.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 14/64] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/banner02.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 26/65] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods008.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 26/66] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods037.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 14/67] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/banner03.jpg => generated 100 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 16/68] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods005.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 16/69] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods006.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 18/70] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods009.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 18/71] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods010.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 15/72] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods012.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 16/73] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods011.jpg => generated 102 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 28/74] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/banner04.jpg => generated 100 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 28/75] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods016.jpg => generated 102 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 15/76] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods015.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 20/77] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods014.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 16/78] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods019.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 30/79] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/banner05.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 30/80] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods013.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 20/81] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods020.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 21/82] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods018.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 18/83] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods017.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 31/84] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods024.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 18/85] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:42 2018] GET /static/images/banner06.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 18/86] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods023.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 18/87] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods022.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 32/88] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:42 2018] GET /static/df_goods/goods021.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 33/90] 192.168.2.106 () {38 vars in 681 bytes} [Fri Dec 14 15:55:47 2018] GET / => generated 12579 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 19/91] 192.168.2.106 () {36 vars in 630 bytes} [Fri Dec 14 15:55:47 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 34/92] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 15:55:47 2018] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 19/94] 192.168.2.106 () {36 vars in 627 bytes} [Fri Dec 14 15:55:47 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 20/94] 192.168.2.106 () {36 vars in 635 bytes} [Fri Dec 14 15:55:47 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 20/95] 192.168.2.106 () {36 vars in 611 bytes} [Fri Dec 14 15:55:47 2018] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 23/96] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:47 2018] GET /static/images/slide.jpg => generated 97 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 23/97] 192.168.2.106 () {36 vars in 655 bytes} [Fri Dec 14 15:55:47 2018] GET /static/images/logo.png => generated 96 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 35/98] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:47 2018] GET /static/images/slide03.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 24/99] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:47 2018] GET /static/images/slide02.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 21/100] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:55:47 2018] GET /static/images/slide04.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 25/101] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:47 2018] GET /static/images/adv02.jpg => generated 97 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 22/102] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:47 2018] GET /static/images/adv01.jpg => generated 97 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 22/103] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:47 2018] GET /static/images/banner01.jpg => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 23/105] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods037.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 23/105] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods036.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 37/106] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods008.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 37/107] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:48 2018] GET /static/images/banner02.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 27/108] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods038.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 27/109] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods039.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 38/110] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods005.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 24/111] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods007.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 39/112] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods011.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 24/113] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods006.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 25/114] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods012.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 25/115] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:48 2018] GET /static/images/banner03.jpg => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 29/116] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:48 2018] GET /static/images/banner04.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 29/117] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods016.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 26/118] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods009.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 26/120] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods010.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 40/120] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods014.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 26/121] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods015.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 27/122] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods020.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 28/123] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods013.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 28/124] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:48 2018] GET /static/images/banner05.jpg => generated 100 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 41/125] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods019.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 29/126] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods018.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 29/127] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods017.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 42/128] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods023.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 30/129] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:48 2018] GET /static/images/banner06.jpg => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 30/130] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods022.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 30/131] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods024.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 31/132] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:48 2018] GET /static/df_goods/goods021.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 32/133] 192.168.2.106 () {36 vars in 631 bytes} [Fri Dec 14 15:55:51 2018] GET /static/css/reset.css => generated 94 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 32/134] 192.168.2.106 () {36 vars in 629 bytes} [Fri Dec 14 15:55:51 2018] GET /static/css/main.css => generated 93 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 33/135] 192.168.2.106 () {38 vars in 682 bytes} [Fri Dec 14 15:55:54 2018] GET / => generated 12579 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 43/136] 192.168.2.106 () {36 vars in 631 bytes} [Fri Dec 14 15:55:54 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 32/137] 192.168.2.106 () {36 vars in 629 bytes} [Fri Dec 14 15:55:54 2018] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 30/138] 192.168.2.106 () {36 vars in 636 bytes} [Fri Dec 14 15:55:54 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 31/139] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 15:55:54 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 33/140] 192.168.2.106 () {36 vars in 612 bytes} [Fri Dec 14 15:55:54 2018] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 44/141] 192.168.2.106 () {36 vars in 656 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/logo.png => generated 96 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 34/142] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/slide.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 33/143] 192.168.2.106 () {36 vars in 661 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/slide04.jpg => generated 99 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 45/145] 192.168.2.106 () {36 vars in 663 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/banner01.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 33/145] 192.168.2.106 () {36 vars in 657 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/adv01.jpg => generated 97 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 35/146] 192.168.2.106 () {36 vars in 661 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/slide02.jpg => generated 99 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 35/147] 192.168.2.106 () {36 vars in 661 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/slide03.jpg => generated 99 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 34/148] 192.168.2.106 () {36 vars in 657 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/adv02.jpg => generated 97 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 35/149] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods039.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 36/150] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods037.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 46/151] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods036.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 36/152] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods038.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 47/153] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/banner02.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 36/154] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods008.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 48/155] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods005.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 38/156] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods007.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 38/157] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods006.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 36/158] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/banner03.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 39/160] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods012.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 49/160] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods011.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 50/161] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods010.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 37/162] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods009.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 51/163] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods016.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 37/164] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/banner04.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 41/165] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods015.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 41/166] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods014.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 42/167] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods013.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 38/168] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/banner05.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 43/169] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods020.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 44/170] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods019.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 39/171] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods018.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 39/172] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods017.jpg => generated 102 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 40/174] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods024.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 45/174] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods023.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 52/175] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods022.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 41/176] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:55:54 2018] GET /static/df_goods/goods021.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 39/177] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:55:54 2018] GET /static/images/banner06.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 40/178] 192.168.2.106 () {38 vars in 682 bytes} [Fri Dec 14 15:57:24 2018] GET / => generated 12579 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 46/179] 192.168.2.106 () {36 vars in 631 bytes} [Fri Dec 14 15:57:24 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 43/180] 192.168.2.106 () {36 vars in 636 bytes} [Fri Dec 14 15:57:24 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 42/181] 192.168.2.106 () {36 vars in 612 bytes} [Fri Dec 14 15:57:24 2018] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 53/182] 192.168.2.106 () {36 vars in 656 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/logo.png => generated 96 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 42/183] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 15:57:24 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 43/184] 192.168.2.106 () {36 vars in 629 bytes} [Fri Dec 14 15:57:24 2018] GET /static/css/main.css => generated 93 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 54/185] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/slide.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 44/186] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 15:57:24 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 56/187] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/slide02.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 56/188] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/slide03.jpg => generated 99 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 45/189] 192.168.2.106 () {36 vars in 612 bytes} [Fri Dec 14 15:57:24 2018] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 46/190] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/slide04.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 57/191] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/adv01.jpg => generated 97 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 48/193] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/adv02.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 58/193] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods039.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 59/194] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods037.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 49/195] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods038.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 49/196] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/banner01.jpg => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 50/197] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods036.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 60/198] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods007.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 52/199] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/banner02.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 52/200] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods008.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 61/201] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods006.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 54/202] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/banner03.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 54/203] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods005.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 62/204] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods010.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 63/205] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods009.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 56/206] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods012.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 56/207] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods011.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 64/208] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/banner04.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 65/209] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods016.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 58/210] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods015.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 66/211] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods013.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 67/212] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods020.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 59/213] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods014.jpg => generated 102 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 59/214] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/banner05.jpg => generated 100 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 68/215] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods019.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 60/216] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods018.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 48/218] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods023.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 70/218] 192.168.2.106 () {36 vars in 666 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods017.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 70/219] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:57:24 2018] GET /static/images/banner06.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 48/220] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods024.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 49/221] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods022.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 61/222] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:24 2018] GET /static/df_goods/goods021.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 62/223] 192.168.2.106 () {38 vars in 682 bytes} [Fri Dec 14 15:57:32 2018] GET / => generated 12579 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 63/224] 192.168.2.106 () {36 vars in 631 bytes} [Fri Dec 14 15:57:32 2018] GET /static/css/reset.css => generated 94 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 50/225] 192.168.2.106 () {36 vars in 629 bytes} [Fri Dec 14 15:57:32 2018] GET /static/css/main.css => generated 93 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 64/226] 192.168.2.106 () {36 vars in 636 bytes} [Fri Dec 14 15:57:32 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 43/227] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 15:57:32 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 51/228] 192.168.2.106 () {36 vars in 656 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/logo.png => generated 96 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 65/229] 192.168.2.106 () {36 vars in 612 bytes} [Fri Dec 14 15:57:32 2018] GET /static/js/slide.js => generated 92 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 71/230] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/slide02.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 66/231] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/slide.jpg => generated 97 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 72/232] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/slide03.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 52/233] 192.168.2.106 () {36 vars in 662 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/slide04.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 53/234] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/adv01.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 67/235] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/adv02.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 54/236] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/banner01.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 44/237] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods038.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 68/238] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods039.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 74/239] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods037.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 74/240] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods036.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 45/241] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/banner02.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 46/242] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods008.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 75/243] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods006.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 55/244] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods007.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 76/245] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods005.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 56/246] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/banner03.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 47/247] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods012.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 57/248] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods011.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 48/249] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods010.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 70/250] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/banner04.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 70/251] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods009.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 77/252] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods016.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 49/254] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods015.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 58/254] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods014.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 78/255] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods013.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 71/256] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/banner05.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 59/257] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods020.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 79/258] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods019.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 50/259] 192.168.2.106 () {34 vars in 626 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods018.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 72/260] 192.168.2.106 () {34 vars in 626 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods014.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 51/261] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods017.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 60/262] 192.168.2.106 () {34 vars in 626 bytes} [Fri Dec 14 15:57:32 2018] GET /static/df_goods/goods013.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2215|app: 0|req: 73/263] 192.168.2.106 () {34 vars in 622 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/banner05.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 52/264] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 15:57:32 2018] GET /static/images/banner06.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 53/265] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:33 2018] GET /static/df_goods/goods024.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2213|app: 0|req: 54/266] 192.168.2.106 () {34 vars in 625 bytes} [Fri Dec 14 15:57:33 2018] GET /static/df_goods/goods020.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2213|app: 0|req: 55/267] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:33 2018] GET /static/df_goods/goods023.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2211|app: 0|req: 80/268] 192.168.2.106 () {34 vars in 625 bytes} [Fri Dec 14 15:57:33 2018] GET /static/df_goods/goods019.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2211|app: 0|req: 81/269] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:33 2018] GET /static/df_goods/goods018.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2215|app: 0|req: 74/270] 192.168.2.106 () {34 vars in 625 bytes} [Fri Dec 14 15:57:33 2018] GET /static/df_goods/goods017.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 62/271] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:33 2018] GET /static/df_goods/goods021.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 2212|app: 0|req: 62/272] 192.168.2.106 () {36 vars in 667 bytes} [Fri Dec 14 15:57:33 2018] GET /static/df_goods/goods022.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 2212|app: 0|req: 63/273] 192.168.2.106 () {34 vars in 622 bytes} [Fri Dec 14 15:57:33 2018] GET /static/images/banner06.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 2217)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:05:27 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55a6f74914d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55a6f74914d0 pid: 2683 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2683)
+spawned uWSGI worker 1 (pid: 2685, cores: 2)
+spawned uWSGI worker 2 (pid: 2686, cores: 2)
+spawned uWSGI worker 3 (pid: 2688, cores: 2)
+spawned uWSGI worker 4 (pid: 2690, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:28:52 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 192.168.2.106:8000（直接做web服务器，使用http） fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:38791 (port auto-assigned) fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55bef45655c0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55bef45655c0 pid: 3656 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3656)
+spawned uWSGI worker 1 (pid: 3658, cores: 2)
+spawned uWSGI worker 2 (pid: 3659, cores: 2)
+spawned uWSGI worker 3 (pid: 3661, cores: 2)
+spawned uWSGI worker 4 (pid: 3663, cores: 2)
+spawned uWSGI http 1 (pid: 3665)
+[pid: 3661|app: 0|req: 1/1] 192.168.2.106 () {38 vars in 682 bytes} [Fri Dec 14 16:28:56 2018] GET / => generated 12579 bytes in 184 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 2/2] 192.168.2.106 () {36 vars in 611 bytes} [Fri Dec 14 16:28:56 2018] GET /static/js/slide.js => generated 92 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 3658|app: 0|req: 2/3] 192.168.2.106 () {36 vars in 655 bytes} [Fri Dec 14 16:28:56 2018] GET /static/images/logo.png => generated 96 bytes in 122 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 3658|app: 0|req: 2/4] 192.168.2.106 () {36 vars in 627 bytes} [Fri Dec 14 16:28:56 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 138 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 3/5] 192.168.2.106 () {36 vars in 661 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/slide02.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 3659|app: 0|req: 2/6] 192.168.2.106 () {36 vars in 635 bytes} [Fri Dec 14 16:28:56 2018] GET /static/js/jquery-1.12.4.min.js => generated 104 bytes in 147 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3659|app: 0|req: 2/7] 192.168.2.106 () {36 vars in 629 bytes} [Fri Dec 14 16:28:56 2018] GET /static/css/reset.css => generated 94 bytes in 157 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3663|app: 0|req: 2/8] 192.168.2.106 () {36 vars in 657 bytes} [Fri Dec 14 16:28:56 2018] GET /static/images/slide.jpg => generated 97 bytes in 123 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 3661|app: 0|req: 4/9] 192.168.2.106 () {36 vars in 661 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/slide03.jpg => generated 99 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3663|app: 0|req: 2/10] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 16:28:56 2018] GET /static/css/main.css => generated 93 bytes in 161 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3659|app: 0|req: 3/11] 192.168.2.106 () {36 vars in 661 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/slide04.jpg => generated 99 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 3658|app: 0|req: 3/12] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/adv01.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 3659|app: 0|req: 4/13] 192.168.2.106 () {36 vars in 628 bytes} [Fri Dec 14 16:28:57 2018] GET /static/js/jquery-ui.min.js => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 5/14] 192.168.2.106 () {36 vars in 612 bytes} [Fri Dec 14 16:28:57 2018] GET /static/js/slide.js => generated 92 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 1)
+[pid: 3659|app: 0|req: 5/15] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/banner01.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3658|app: 0|req: 4/16] 192.168.2.106 () {36 vars in 658 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/adv02.jpg => generated 97 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3663|app: 0|req: 3/17] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/banner02.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3661|app: 0|req: 6/18] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods039.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3658|app: 0|req: 5/19] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods038.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3658|app: 0|req: 6/20] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods036.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 8/21] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods008.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 8/22] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods037.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3663|app: 0|req: 4/23] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/banner03.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3658|app: 0|req: 7/24] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods005.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3661|app: 0|req: 10/25] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods007.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 10/26] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods006.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3663|app: 0|req: 5/27] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods012.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3658|app: 0|req: 8/28] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods011.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 12/29] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods010.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 12/30] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods009.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3658|app: 0|req: 9/31] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/banner04.jpg => generated 100 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3663|app: 0|req: 6/32] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods015.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3658|app: 0|req: 10/33] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods016.jpg => generated 102 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 13/34] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods014.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 14/36] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods020.jpg => generated 102 bytes in 0 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3659|app: 0|req: 7/36] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods013.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3663|app: 0|req: 7/37] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods019.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3659|app: 0|req: 8/38] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods018.jpg => generated 102 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3659|app: 0|req: 8/39] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/banner05.jpg => generated 100 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3659|app: 0|req: 9/40] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods017.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3661|app: 0|req: 16/42] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods024.jpg => generated 102 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3659|app: 0|req: 10/42] 192.168.2.106 () {36 vars in 664 bytes} [Fri Dec 14 16:28:57 2018] GET /static/images/banner06.jpg => generated 100 bytes in 1 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3659|app: 0|req: 11/43] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods022.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+[pid: 3661|app: 0|req: 17/44] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods023.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 3661|app: 0|req: 17/45] 192.168.2.106 () {36 vars in 668 bytes} [Fri Dec 14 16:28:57 2018] GET /static/df_goods/goods021.jpg => generated 102 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 101 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3665)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:29:38 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (192.168.2.106:8000（直接做web服务器，使用http）).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:30:21 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (192.168.2.106:8000（直接做web服务器，使用http）).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:33:28 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (192.168.2.106:8000（直接做web服务器，使用http）).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:34:29 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55e536fc54d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e536fc54d0 pid: 4061 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4061)
+spawned uWSGI worker 1 (pid: 4063, cores: 2)
+spawned uWSGI worker 2 (pid: 4064, cores: 2)
+spawned uWSGI worker 3 (pid: 4066, cores: 2)
+spawned uWSGI worker 4 (pid: 4068, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:34:32 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x563efa3a04d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:34:32 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x563cb74794d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563efa3a04d0 pid: 4079 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4079)
+spawned uWSGI worker 1 (pid: 4084, cores: 2)
+spawned uWSGI worker 2 (pid: 4085, cores: 2)
+spawned uWSGI worker 3 (pid: 4087, cores: 2)
+spawned uWSGI worker 4 (pid: 4089, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:34:32 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x5588af7144d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563cb74794d0 pid: 4083 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4083)
+spawned uWSGI worker 1 (pid: 4096, cores: 2)
+spawned uWSGI worker 2 (pid: 4097, cores: 2)
+spawned uWSGI worker 3 (pid: 4099, cores: 2)
+spawned uWSGI worker 4 (pid: 4101, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:34:32 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x561264b6a4d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5588af7144d0 pid: 4095 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4095)
+spawned uWSGI worker 1 (pid: 4109, cores: 2)
+spawned uWSGI worker 2 (pid: 4110, cores: 2)
+spawned uWSGI worker 3 (pid: 4112, cores: 2)
+spawned uWSGI worker 4 (pid: 4114, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:34:33 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x56447d23c4d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561264b6a4d0 pid: 4107 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4107)
+spawned uWSGI worker 1 (pid: 4121, cores: 2)
+spawned uWSGI worker 2 (pid: 4122, cores: 2)
+spawned uWSGI worker 3 (pid: 4124, cores: 2)
+spawned uWSGI worker 4 (pid: 4127, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 16:34:33 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 #外网ip:端口（使用nginx连接时，使用socket） fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55aeeb4b64d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56447d23c4d0 pid: 4119 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4119)
+spawned uWSGI worker 1 (pid: 4133, cores: 2)
+spawned uWSGI worker 2 (pid: 4134, cores: 2)
+spawned uWSGI worker 3 (pid: 4136, cores: 2)
+spawned uWSGI worker 4 (pid: 4138, cores: 2)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55aeeb4b64d0 pid: 4131 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4131)
+spawned uWSGI worker 1 (pid: 4141, cores: 2)
+spawned uWSGI worker 2 (pid: 4142, cores: 2)
+spawned uWSGI worker 3 (pid: 4144, cores: 2)
+spawned uWSGI worker 4 (pid: 4146, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+Fri Dec 14 16:44:16 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Dec 14 16:44:16 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Dec 14 16:44:16 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Dec 14 16:44:16 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Dec 14 16:44:16 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Dec 14 16:44:16 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 17:03:21 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (192.168.2.106:8000).
+bind(): Address already in use [core/socket.c line 769]

@@ -2,7 +2,9 @@ from django.http import JsonResponse,HttpResponseRedirect
 from django.shortcuts import render,redirect
 from df_user.models import UserInfo
 from df_goods.models import GoodsInfo
+from df_order.models import OrderInfo,OrderDetailInfo
 from hashlib import sha1
+from django.core.paginator import *
 
 def decoration_login(func):
     def login_in(request,*args,**kwargs):
@@ -68,6 +70,7 @@ def login_handle(request):
         pwd_s1 = s1.hexdigest()
         users = UserInfo.objects.filter(uname = username)
         if users[0].upwd == pwd_s1:#用户名存在，密码正确
+            #登录完成后在session中保存一系列用户的信息
             request.session['uname'] = username
             request.session['uemail'] = users[0].uemail
             request.session['uid'] = users[0].id
@@ -85,8 +88,10 @@ def login_handle(request):
 
 def logout(request):
     request.session.flush()
+
     red = HttpResponseRedirect('/')
     red.set_cookie('url','/')
+    red.set_cookie('goods_id','')
     return red
 
 
@@ -104,21 +109,52 @@ def user_center_info(request):
         goods = goods_id
     context = {'title': '用户中心','request':request,'goods':goods}
     return render(request, 'df_user/user_center_info.html', context)
+
 @decoration_login
-def user_center_order(request):
-    context = {'title': '用户中心','request':request}
+def user_center_order(request,pagenumber):
+    uid = request.session['uid']
+    orders = OrderInfo.objects.filter(user_id = uid).order_by('-oid')
+    for order in orders:
+        order.details = OrderDetailInfo.objects.filter(order_id = order.oid)
+        for orderdetail in order.details:
+            orderdetail.total = orderdetail.count * orderdetail.price
+    paginator = Paginator(orders,2)
+    if pagenumber == '':
+        page = paginator.page(1)
+    else:
+        page = paginator.page(pagenumber)
+    context = {'title': '用户中心','request':request,'page':page}
     return render(request, 'df_user/user_center_order.html', context)
+
+
 @decoration_login
 def user_center_site(request):
-    name = request.GET.get('name','')
-    address = request.GET.get('address','')
-    mailcode = request.GET.get('mailcode','')
-    cellphone = request.GET.get('cellphone','')
-    context = {'title': '用户中心','request':request,'name':name,'address':address,'cellphone':cellphone,'mailcode':mailcode}
+    uid = request.session['uid']
+    user = UserInfo.objects.get(pk = uid)
+    uaddress = user.uaddress
+    umailcode = user.umailcode
+    ureceive = user.ureceive
+    umobile = user.umobile
+    address = umailcode + ' ' + uaddress + ' ' + ureceive + ' ' + umobile
+    context = {'title':'用户中心','request':request,'address':address}
     return render(request, 'df_user/user_center_site.html', context)
 
 
 
+def editaddress(request):
+    uid = request.session['uid']
+    user = UserInfo.objects.get(pk = uid)
+    user.uaddress = request.POST['address']
+    user.umailcode = request.POST['mailcode']
+    user.ureceive = request.POST['name']
+    user.umobile = request.POST['cellphone']
+    user.save()
+    return redirect('/order/')
 
+def pay(request,oid):
+    order = OrderInfo.objects.get(pk = oid)
+    order.oIsPay = True
+    order.save()
+    return redirect('/user/user_center_order/')
 
 # Create your views here.

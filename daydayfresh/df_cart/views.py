@@ -2,6 +2,7 @@ from django.shortcuts import render,redirect
 from df_cart.models import CartInfo
 from df_goods.models import GoodsInfo
 from django.http import HttpResponseRedirect,JsonResponse
+from django.core.paginator import *
 
 def decoration_login(fun):
     def login_in(request,*args,**kwargs):
@@ -25,8 +26,6 @@ def cart(request):
         return JsonResponse({'count':count})
     #用户购买的商品列表
     else:
-        for cart in carts:
-            cart.goods = GoodsInfo.objects.get(pk = cart.good_id)
         context = {'request':request,'carts':carts}
         return render(request,'df_cart/cart.html',context)
         
