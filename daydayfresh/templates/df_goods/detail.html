@@ -135,7 +135,7 @@
 				<h3>新品推荐</h3>
 				<ul>{% for good in goods_new %}
 					<li>
-						<a href="/goods/detail/{{type.id}}/{{good.id}}/"><img src="/static/{{good.gpic}}/"></a>
+						<a href="/goods/detail/{{type.id}}/{{good.id}}/"><img src="/static/{{good.gpic}}"></a>
 						<h4><a href="/goods/detail/{{type.id}}/{{good.id}}">{{good.gtitle}}</a></h4>
 						<div class="prize">￥{{good.gprice}}</div>
 					</li>

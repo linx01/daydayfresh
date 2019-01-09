@@ -168,3 +168,358 @@ worker 2 buried after 1 seconds
 worker 3 buried after 1 seconds
 worker 4 buried after 1 seconds
 goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Fri Dec 14 17:58:16 2018] ***
+compiled with version: 7.3.0 on 03 December 2018 12:28:36
+os: Linux-4.15.0-42-generic #45-Ubuntu SMP Thu Nov 15 19:32:57 UTC 2018
+nodename: master
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/linx/Desktop/projects/daydayfresh/daydayfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/linx/.virtualenv/Django/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/linx/Desktop/projects/daydayfresh/daydayfresh
+your processes number limit is 15449
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 192.168.2.106:8000 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x5653be5d2570
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5653be5d2570 pid: 3935 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3935)
+spawned uWSGI worker 1 (pid: 3937, cores: 2)
+spawned uWSGI worker 2 (pid: 3938, cores: 2)
+spawned uWSGI worker 3 (pid: 3940, cores: 2)
+spawned uWSGI worker 4 (pid: 3942, cores: 2)
+[pid: 3937|app: 0|req: 1/1] 192.168.2.106 () {42 vars in 739 bytes} [Fri Dec 14 17:58:43 2018] GET / => generated 12579 bytes in 172 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 1/2] 192.168.2.106 () {42 vars in 717 bytes} [Fri Dec 14 17:58:43 2018] GET /favicon.ico => generated 85 bytes in 146 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 1/3] 192.168.2.106 () {44 vars in 798 bytes} [Fri Dec 14 17:58:53 2018] GET /user/login/ => generated 2544 bytes in 93 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 2/4] 192.168.2.106 () {52 vars in 1006 bytes} [Fri Dec 14 17:58:58 2018] POST /user/login_handle/ => generated 0 bytes in 20 msecs (HTTP/1.1 302) 7 headers in 364 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 1/5] 192.168.2.106 () {46 vars in 862 bytes} [Fri Dec 14 17:58:58 2018] GET / => generated 12587 bytes in 150 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 2/6] 192.168.2.106 () {44 vars in 752 bytes} [Fri Dec 14 17:58:58 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 2/7] 192.168.2.106 () {44 vars in 830 bytes} [Fri Dec 14 18:01:25 2018] GET /cart/ => generated 5611 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 3/8] 192.168.2.106 () {44 vars in 869 bytes} [Fri Dec 14 18:01:27 2018] GET /user/user_center_info/ => generated 2770 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 2/9] 192.168.2.106 () {44 vars in 888 bytes} [Fri Dec 14 18:01:29 2018] GET /user/user_center_order/ => generated 4831 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3940|app: 0|req: 3/10] 192.168.2.106 () {44 vars in 889 bytes} [Fri Dec 14 18:01:29 2018] GET /user/user_center_order/ => generated 4831 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 3/11] 192.168.2.106 () {44 vars in 843 bytes} [Fri Dec 14 18:01:34 2018] GET / => generated 12587 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3937|app: 0|req: 4/12] 192.168.2.106 () {44 vars in 752 bytes} [Fri Dec 14 18:01:34 2018] GET /cart/ => generated 12 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.838 seconds.
+Prefix dict has been built succesfully.
+[pid: 3942|app: 0|req: 3/13] 192.168.2.106 () {44 vars in 854 bytes} [Fri Dec 14 18:01:37 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 877 msecs (HTTP/1.1 200) 5 headers in 157 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 5/14] 192.168.2.106 () {44 vars in 781 bytes} [Fri Dec 14 18:01:38 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 4/15] 192.168.2.106 () {44 vars in 883 bytes} [Fri Dec 14 18:02:06 2018] GET /goods/list/2/-id/ => generated 5987 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 4/16] 192.168.2.106 () {44 vars in 781 bytes} [Fri Dec 14 18:02:06 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 5/17] 192.168.2.106 () {44 vars in 891 bytes} [Fri Dec 14 18:02:10 2018] GET /goods/list/2/-gprice/ => generated 5991 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 6/18] 192.168.2.106 () {44 vars in 785 bytes} [Fri Dec 14 18:02:10 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 7/19] 192.168.2.106 () {44 vars in 895 bytes} [Fri Dec 14 18:02:11 2018] GET /goods/list/2/-gclick/ => generated 5991 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 8/20] 192.168.2.106 () {44 vars in 785 bytes} [Fri Dec 14 18:02:11 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 9/21] 192.168.2.106 () {44 vars in 895 bytes} [Fri Dec 14 18:02:13 2018] GET /goods/list/2/-gprice/ => generated 5991 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 10/22] 192.168.2.106 () {44 vars in 785 bytes} [Fri Dec 14 18:02:13 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 11/23] 192.168.2.106 () {44 vars in 887 bytes} [Fri Dec 14 18:02:15 2018] GET /goods/list/2/-id/ => generated 5987 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 5/24] 192.168.2.106 () {44 vars in 781 bytes} [Fri Dec 14 18:02:15 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 12/25] 192.168.2.106 () {44 vars in 904 bytes} [Fri Dec 14 18:02:16 2018] GET /search/?q=%E6%B0%B4%E6%9E%9C => generated 7453 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 6/26] 192.168.2.106 () {44 vars in 792 bytes} [Fri Dec 14 18:02:16 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+[pid: 3942|app: 0|req: 13/27] 192.168.2.106 () {44 vars in 929 bytes} [Fri Dec 14 18:02:19 2018] GET /search/?q=%E6%B0%B4%E6%9E%9C&page=2 => generated 5585 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+Loading model cost 0.819 seconds.
+Prefix dict has been built succesfully.
+[pid: 3940|app: 0|req: 4/28] 192.168.2.106 () {44 vars in 929 bytes} [Fri Dec 14 18:02:19 2018] GET /search/?q=%E6%B0%B4%E6%9E%9C&page=2 => generated 5585 bytes in 854 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 7/29] 192.168.2.106 () {44 vars in 799 bytes} [Fri Dec 14 18:02:19 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 5/30] 192.168.2.106 () {44 vars in 936 bytes} [Fri Dec 14 18:02:21 2018] GET /search/?q=%E6%B0%B4%E6%9E%9C&page=1 => generated 7464 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 8/31] 192.168.2.106 () {44 vars in 799 bytes} [Fri Dec 14 18:02:21 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 14/32] 192.168.2.106 () {44 vars in 903 bytes} [Fri Dec 14 18:02:22 2018] GET /goods/detail/1/39/ => generated 7420 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 9/33] 192.168.2.106 () {44 vars in 790 bytes} [Fri Dec 14 18:02:22 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 6/34] 192.168.2.106 () {44 vars in 870 bytes} [Fri Dec 14 18:04:58 2018] GET /goods/detail/1/39/ => generated 7420 bytes in 237 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 10/35] 192.168.2.106 () {44 vars in 790 bytes} [Fri Dec 14 18:04:59 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3940|app: 0|req: 7/36] 192.168.2.106 () {46 vars in 892 bytes} [Fri Dec 14 18:05:12 2018] GET /goods/detail/1/39/ => generated 7420 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 8/37] 192.168.2.106 () {48 vars in 843 bytes} [Fri Dec 14 18:05:12 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 6/38] 192.168.2.106 () {48 vars in 911 bytes} [Fri Dec 14 18:05:22 2018] GET / => generated 12587 bytes in 36 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 9/39] 192.168.2.106 () {48 vars in 825 bytes} [Fri Dec 14 18:05:22 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 10/40] 192.168.2.106 () {48 vars in 929 bytes} [Fri Dec 14 18:05:31 2018] GET /goods/detail/1/39/ => generated 7420 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 11/41] 192.168.2.106 () {48 vars in 843 bytes} [Fri Dec 14 18:05:31 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.816 seconds.
+Prefix dict has been built succesfully.
+[pid: 3938|app: 0|req: 12/42] 192.168.2.106 () {46 vars in 892 bytes} [Fri Dec 14 18:05:54 2018] GET /goods/detail/1/39/ => generated 7418 bytes in 865 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 15/43] 192.168.2.106 () {48 vars in 843 bytes} [Fri Dec 14 18:05:55 2018] GET /cart/ => generated 12 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 7/44] 192.168.2.106 () {48 vars in 911 bytes} [Fri Dec 14 18:06:01 2018] GET / => generated 12587 bytes in 45 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 16/45] 192.168.2.106 () {48 vars in 825 bytes} [Fri Dec 14 18:06:01 2018] GET /cart/ => generated 12 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 17/46] 192.168.2.106 () {44 vars in 840 bytes} [Fri Dec 14 18:10:01 2018] GET / => generated 12587 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 8/47] 192.168.2.106 () {44 vars in 772 bytes} [Fri Dec 14 18:10:01 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 18/48] 192.168.2.106 () {44 vars in 874 bytes} [Fri Dec 14 18:10:08 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 13/49] 192.168.2.106 () {44 vars in 789 bytes} [Fri Dec 14 18:10:08 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 14/50] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:10:26 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 269 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 19/51] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:10:27 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 20/52] 192.168.2.106 () {44 vars in 868 bytes} [Fri Dec 14 18:10:37 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 15/53] 192.168.2.106 () {44 vars in 789 bytes} [Fri Dec 14 18:10:37 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.855 seconds.
+Prefix dict has been built succesfully.
+[pid: 3937|app: 0|req: 9/54] 192.168.2.106 () {44 vars in 868 bytes} [Fri Dec 14 18:10:40 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 895 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 16/55] 192.168.2.106 () {44 vars in 789 bytes} [Fri Dec 14 18:10:41 2018] GET /cart/ => generated 12 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 10/56] 192.168.2.106 () {44 vars in 868 bytes} [Fri Dec 14 18:10:42 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 11/57] 192.168.2.106 () {44 vars in 789 bytes} [Fri Dec 14 18:10:42 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 21/58] 192.168.2.106 () {44 vars in 868 bytes} [Fri Dec 14 18:10:45 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 17/59] 192.168.2.106 () {44 vars in 789 bytes} [Fri Dec 14 18:10:45 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 18/60] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:10:56 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 262 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 19/61] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:10:57 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 20/62] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:10:59 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 21/63] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:10:59 2018] GET /cart/ => generated 12 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 22/64] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:11:00 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 23/65] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:11:00 2018] GET /cart/ => generated 12 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 22/66] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:11:08 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 23/67] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:11:09 2018] GET /cart/ => generated 12 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 11/68] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:11:40 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 38 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 24/69] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:11:40 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 12/70] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:11:42 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 249 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 24/71] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:11:42 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 13/72] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:11:43 2018] GET /goods/detail/2/7/ => generated 7620 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 25/73] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:11:44 2018] GET /cart/ => generated 12 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 25/74] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:11:45 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 29 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 26/75] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:11:45 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 27/76] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:11:55 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 12/77] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:11:55 2018] GET /cart/ => generated 12 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3940|app: 0|req: 13/78] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:11:58 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 26/79] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:11:58 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 28/80] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:12:00 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 266 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 27/81] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:12:00 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 14/82] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:12:03 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 28/83] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:12:03 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 29/84] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:12:04 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 30/85] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:12:04 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 15/86] 192.168.2.106 () {46 vars in 890 bytes} [Fri Dec 14 18:12:06 2018] GET /goods/detail/2/7/ => generated 7622 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 16/87] 192.168.2.106 () {48 vars in 842 bytes} [Fri Dec 14 18:12:06 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 14/88] 192.168.2.106 () {44 vars in 891 bytes} [Fri Dec 14 18:12:25 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 31 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 15/89] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:12:25 2018] GET /cart/ => generated 12 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 17/90] 192.168.2.106 () {44 vars in 873 bytes} [Fri Dec 14 18:12:29 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 257 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 18/91] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:12:29 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 31/92] 192.168.2.106 () {44 vars in 873 bytes} [Fri Dec 14 18:12:32 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 19/93] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:12:32 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 20/94] 192.168.2.106 () {44 vars in 873 bytes} [Fri Dec 14 18:12:35 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 31 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 21/95] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:12:35 2018] GET /cart/ => generated 12 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 22/96] 192.168.2.106 () {42 vars in 803 bytes} [Fri Dec 14 18:14:59 2018] GET / => generated 12587 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 23/97] 192.168.2.106 () {44 vars in 772 bytes} [Fri Dec 14 18:14:59 2018] GET /cart/ => generated 12 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 32/98] 192.168.2.106 () {42 vars in 781 bytes} [Fri Dec 14 18:14:59 2018] GET /favicon.ico => generated 85 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 24/99] 192.168.2.106 () {44 vars in 874 bytes} [Fri Dec 14 18:15:21 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 29/100] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:15:21 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 25/101] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:15:25 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 39 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 30/102] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:15:25 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 33/103] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:15:33 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 291 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3937|app: 0|req: 16/104] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:15:33 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 31/105] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:15:55 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 42 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 32/106] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:15:55 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 34/107] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:15:59 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 17/108] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:15:59 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 18/109] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:01 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 19/110] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:01 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 20/111] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:01 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 21/112] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:01 2018] GET /cart/ => generated 12 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 35/113] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:02 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 262 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 36/114] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:02 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 37/115] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:02 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 36 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 26/116] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:02 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 22/117] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:03 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 38/118] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:03 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 23/119] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:03 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 39/120] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:04 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 40/121] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:04 2018] GET /goods/detail/2/8/ => generated 7905 bytes in 35 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 41/122] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:04 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 24/123] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:05 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 284 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 33/124] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:05 2018] GET /cart/ => generated 12 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 25/125] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:06 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 34/126] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:06 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 35/127] 192.168.2.106 () {46 vars in 910 bytes} [Fri Dec 14 18:16:07 2018] GET /goods/detail/2/8/ => generated 7903 bytes in 31 msecs (HTTP/1.1 200) 5 headers in 170 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 36/128] 192.168.2.106 () {44 vars in 794 bytes} [Fri Dec 14 18:16:07 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 42/129] 192.168.2.106 () {44 vars in 862 bytes} [Fri Dec 14 18:16:11 2018] GET / => generated 12587 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 27/130] 192.168.2.106 () {44 vars in 777 bytes} [Fri Dec 14 18:16:11 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 26/131] 192.168.2.106 () {44 vars in 881 bytes} [Fri Dec 14 18:16:19 2018] GET /goods/detail/3/10/ => generated 8024 bytes in 32 msecs (HTTP/1.1 200) 5 headers in 176 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 37/132] 192.168.2.106 () {44 vars in 801 bytes} [Fri Dec 14 18:16:19 2018] GET /cart/ => generated 12 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 43/133] 192.168.2.106 () {44 vars in 879 bytes} [Fri Dec 14 18:16:38 2018] GET /cart/ => generated 5611 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 27/134] 192.168.2.106 () {44 vars in 902 bytes} [Fri Dec 14 18:16:41 2018] GET /user/user_center_order/ => generated 4831 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 38/135] 192.168.2.106 () {46 vars in 933 bytes} [Fri Dec 14 18:17:16 2018] GET /user/user_center_order/ => generated 4831 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 28/136] 192.168.2.106 () {46 vars in 933 bytes} [Fri Dec 14 18:17:17 2018] GET /user/user_center_order/ => generated 4831 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 44/137] 192.168.2.106 () {46 vars in 933 bytes} [Fri Dec 14 18:17:17 2018] GET /user/user_center_order/ => generated 4831 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3940|app: 0|req: 28/138] 192.168.2.106 () {46 vars in 933 bytes} [Fri Dec 14 18:17:17 2018] GET /user/user_center_order/ => generated 4831 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 39/139] 192.168.2.106 () {46 vars in 933 bytes} [Fri Dec 14 18:17:17 2018] GET /user/user_center_order/ => generated 4831 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 29/140] 192.168.2.106 () {46 vars in 933 bytes} [Fri Dec 14 18:17:18 2018] GET /user/user_center_order/ => generated 4831 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 45/141] 192.168.2.106 () {46 vars in 933 bytes} [Fri Dec 14 18:17:18 2018] GET /user/user_center_order/ => generated 4831 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 46/142] 192.168.2.106 () {44 vars in 918 bytes} [Fri Dec 14 18:17:18 2018] GET /user/user_center_info/ => generated 4299 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 30/143] 192.168.2.106 () {46 vars in 949 bytes} [Fri Dec 14 18:17:20 2018] GET /user/user_center_info/ => generated 4299 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3940|app: 0|req: 29/144] 192.168.2.106 () {46 vars in 949 bytes} [Fri Dec 14 18:17:20 2018] GET /user/user_center_info/ => generated 4299 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 31/145] 192.168.2.106 () {46 vars in 949 bytes} [Fri Dec 14 18:17:20 2018] GET /user/user_center_info/ => generated 4299 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 30/146] 192.168.2.106 () {46 vars in 949 bytes} [Fri Dec 14 18:17:20 2018] GET /user/user_center_info/ => generated 4299 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 32/147] 192.168.2.106 () {46 vars in 949 bytes} [Fri Dec 14 18:17:21 2018] GET /user/user_center_info/ => generated 4299 bytes in 12 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 40/148] 192.168.2.106 () {46 vars in 949 bytes} [Fri Dec 14 18:17:21 2018] GET /user/user_center_info/ => generated 4299 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 41/149] 192.168.2.106 () {44 vars in 917 bytes} [Fri Dec 14 18:17:22 2018] GET /user/user_center_info/ => generated 4299 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 47/150] 192.168.2.106 () {44 vars in 873 bytes} [Fri Dec 14 18:17:24 2018] GET / => generated 12587 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 48/151] 192.168.2.106 () {44 vars in 783 bytes} [Fri Dec 14 18:17:24 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3940|app: 0|req: 31/152] 192.168.2.106 () {46 vars in 904 bytes} [Fri Dec 14 18:17:26 2018] GET / => generated 12587 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 32/153] 192.168.2.106 () {44 vars in 783 bytes} [Fri Dec 14 18:17:26 2018] GET /cart/ => generated 12 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 49/154] 192.168.2.106 () {46 vars in 904 bytes} [Fri Dec 14 18:17:26 2018] GET / => generated 12587 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 50/155] 192.168.2.106 () {44 vars in 783 bytes} [Fri Dec 14 18:17:26 2018] GET /cart/ => generated 12 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3940|app: 0|req: 33/156] 192.168.2.106 () {46 vars in 904 bytes} [Fri Dec 14 18:17:27 2018] GET / => generated 12587 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 34/157] 192.168.2.106 () {44 vars in 783 bytes} [Fri Dec 14 18:17:27 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 42/158] 192.168.2.106 () {46 vars in 904 bytes} [Fri Dec 14 18:17:27 2018] GET / => generated 12587 bytes in 48 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 33/159] 192.168.2.106 () {44 vars in 783 bytes} [Fri Dec 14 18:17:27 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 51/160] 192.168.2.106 () {46 vars in 904 bytes} [Fri Dec 14 18:17:27 2018] GET / => generated 12587 bytes in 44 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 43/161] 192.168.2.106 () {44 vars in 783 bytes} [Fri Dec 14 18:17:27 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 34/162] 192.168.2.106 () {44 vars in 885 bytes} [Fri Dec 14 18:17:32 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 35/163] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:32 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 44/164] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:34 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 45/165] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:34 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 52/166] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:34 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 46/167] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:34 2018] GET /cart/ => generated 12 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 47/168] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:35 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+linx01
+[pid: 3937|app: 0|req: 36/169] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:35 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 48/170] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:35 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 35/171] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:35 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 37/172] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:35 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 38/173] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:35 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 39/174] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:35 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 36/175] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:35 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3938|app: 0|req: 49/176] 192.168.2.106 () {44 vars in 868 bytes} [Fri Dec 14 18:17:37 2018] GET / => generated 12587 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 50/177] 192.168.2.106 () {44 vars in 783 bytes} [Fri Dec 14 18:17:37 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 53/178] 192.168.2.106 () {44 vars in 885 bytes} [Fri Dec 14 18:17:39 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 15 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 37/179] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:39 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 51/180] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:41 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 52/181] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:41 2018] GET /cart/ => generated 12 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 54/182] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:41 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 55/183] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:41 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 40/184] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:41 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+linx01
+[pid: 3942|app: 0|req: 56/185] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:41 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 41/186] 192.168.2.106 () {46 vars in 916 bytes} [Fri Dec 14 18:17:41 2018] GET /goods/list/3/-id/ => generated 6008 bytes in 11 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 57/187] 192.168.2.106 () {44 vars in 800 bytes} [Fri Dec 14 18:17:41 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 58/188] 192.168.2.106 () {44 vars in 904 bytes} [Fri Dec 14 18:17:42 2018] GET /goods/detail/3/12/ => generated 7731 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 1)
+linx01
+[pid: 3942|app: 0|req: 59/189] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:42 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 53/190] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:44 2018] GET /goods/detail/3/12/ => generated 7729 bytes in 273 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 38/191] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:45 2018] GET /cart/ => generated 12 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3937|app: 0|req: 42/192] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:45 2018] GET /goods/detail/3/12/ => generated 7729 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 0)
+linx01
+[pid: 3940|app: 0|req: 39/193] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:45 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 40/194] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:45 2018] GET /goods/detail/3/12/ => generated 7731 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 41/195] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:45 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 42/196] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:45 2018] GET /goods/detail/3/12/ => generated 7731 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 54/197] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:45 2018] GET /cart/ => generated 12 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3940|app: 0|req: 43/198] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:46 2018] GET /goods/detail/3/12/ => generated 7731 bytes in 31 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 0)
+linx01
+[pid: 3938|app: 0|req: 55/199] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:46 2018] GET /cart/ => generated 12 bytes in 3 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3940|app: 0|req: 44/200] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:46 2018] GET /goods/detail/3/12/ => generated 7731 bytes in 283 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 1)
+linx01
+[pid: 3940|app: 0|req: 45/201] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:46 2018] GET /cart/ => generated 12 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3938|app: 0|req: 56/202] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:47 2018] GET /goods/detail/3/12/ => generated 7729 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 43/203] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:47 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 3942|app: 0|req: 60/204] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:48 2018] GET /goods/detail/3/12/ => generated 7731 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 1)
+linx01
+[pid: 3937|app: 0|req: 44/205] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:48 2018] GET /cart/ => generated 12 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 45/206] 192.168.2.106 () {46 vars in 941 bytes} [Fri Dec 14 18:17:51 2018] GET /goods/detail/3/12/ => generated 7729 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 182 bytes (1 switches on core 1)
+linx01
+[pid: 3938|app: 0|req: 57/207] 192.168.2.106 () {44 vars in 807 bytes} [Fri Dec 14 18:17:51 2018] GET /cart/ => generated 12 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 3937|app: 0|req: 46/208] 192.168.2.106 () {44 vars in 899 bytes} [Fri Dec 14 18:19:16 2018] GET /user/logout/ => generated 0 bytes in 13 msecs (HTTP/1.1 302) 7 headers in 272 bytes (1 switches on core 0)
+[pid: 3942|app: 0|req: 61/209] 192.168.2.106 () {44 vars in 816 bytes} [Fri Dec 14 18:19:16 2018] GET / => generated 12579 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
