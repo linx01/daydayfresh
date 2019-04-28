@@ -9,6 +9,7 @@ class UserInfo(models.Model):
     uaddress = models.CharField(max_length = 100,default='')
     umailcode = models.CharField(max_length = 6,default='' )
     umobile = models.CharField(max_length = 11,default='')
+    objects = models.Manager()
     def __str__(self):
         return self.uname
 

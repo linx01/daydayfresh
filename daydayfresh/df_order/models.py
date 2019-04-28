@@ -8,6 +8,8 @@ class OrderInfo(models.Model):
 	oIsPay = models.BooleanField(default = False)
 	ototal = models.DecimalField(max_digits = 6, decimal_places = 2)
 	oaddress = models.CharField(max_length = 150)
+	objects = models.Manager()
+
 
 #多个订单对应多个商品，新建立一张表格保存二者的关系
 class OrderDetailInfo(models.Model):
@@ -15,6 +17,7 @@ class OrderDetailInfo(models.Model):
 	order = models.ForeignKey('OrderInfo',on_delete = models.CASCADE)
 	price = models.DecimalField(max_digits = 6, decimal_places = 2)
 	count = models.IntegerField()
+	objects = models.Manager()
 
 
 # Create your models here.
